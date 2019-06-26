@@ -1,0 +1,120 @@
+Informe o valor lógico (True ou False) para as proposições lógicas abaixo:
+a. (TRUE ) 2 * 4 == 24/3
+b. ( FALSE) (15 % 4) < (19 % 6)
+c. ( ) !(2 < 5) != (8 == 8)
+d. ( TRUE) True or False
+e. (TRUE ) 2**2 == math.pow(2, 2)
+f. (FALSE) False and ( (7 / 2) > 3.5 )
+g. (TRUE) ( math.ceil( 2.5 ) == 3) and (math.sqrt( 9) == 3)
+2. Escreva um programa que leia um valor em metros e o exiba convertido em milímetros.
+
+import math
+ 
+número =float(input("Digite o comprimento em metros que deseja converter:"))
+ 
+resultado = (número*100)
+ 
+print("O resultado em milímetros é ",resultado,"mm")
+print("Fim do programa")
+
+3. Escreva um programa que leia a quantidade de dias, horas, minutos e segundos do usuário. Calcule o total em segundos.
+ 
+print("Calculadora de segundos")
+ 
+dias =float(input("Digite a quantidade de dias:"))
+ 
+horas = float(input("Digite a quantidade de horas:"))
+ 
+minutos =float(input("Digite a quantidade de minutos:"))
+ 
+segundos =float(input("Digite a quantidade de segundos:"))
+ 
+resultado =(dias*24*3600)+(horas*3600)+(minutos*60)+(segundos)
+ 
+print("O total em segundos dos dias informados foram:",resultado)
+ 
+print("Fim")
+
+
+
+
+4. Faça um programa que calcule o aumento de um salário. Ele deve solicitar o valor do salário e a
+porcentagem do aumento. Exiba o valor do aumento e do novo salário.
+
+print("Calculadora de aumento salarial")
+ 
+salario_real =float(input("Digite o seu salário real:"))
+ 
+aumento =float(input("Digite a porcentagem de aumento desejado:"))
+ 
+resultado =(salario_real)+((salario_real)*(aumento/100))
+ 
+print("Com o aumento de ",aumento, "% o salário com aumento seria:",resultado)
+5. Solicite o preço de uma mercadoria e o percentual de desconto. Exiba o valor do desconto e o preço a pagar.
+
+print("Calculadora de descontos")
+ 
+preço =float(input("Digite o preço normal:"))
+ 
+desconto =float(input("Digite a porcentagem de desconto:"))
+ 
+resultado =(preço)-((preço)*(desconto/100))
+ 
+print("Com o desconto de ",desconto, "% o preço com desconto seria:",resultado)
+
+6. Calcule o tempo de uma viagem de carro. Pergunte a distância a percorrer e a velocidade média esperada para a viagem.
+
+print("Calculadora de tempo")
+ 
+distancia =float(input("Digite a distância a ser percorrida em quilômetros:"))
+ 
+velocidade =float(input("Digite a velocidade média do percurso:"))
+ 
+resultado =distancia /velocidade
+ 
+print("A duração da viagem será de:", resultado, "horas")
+
+
+7. Converta uma temperatura digitada em Celsius para Fahrenheit. F = 9*C/5 + 32 .
+
+print("Conversor de medidas de temperatura")
+ 
+temp =float(input("Digite a temperatura em célsius:"))
+ 
+resultado =(9*temp)/5 + 32
+ 
+print(resultado)
+
+
+
+
+8. Escreva um programa que pergunte a quantidade de km percorridos por um carro alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$ 60,00 por dia e R$ 0,15 por km rodado.
+
+print("Calculadora de custo")
+ 
+distancia =float(input("Digite a distância percorrida pelo usuário em quilômetros:"))
+ 
+dias =float(input("Digite os dias usados pelo usuário:"))
+ 
+resultado =(distancia *0.15)+(dias*60)
+ 
+print("O custo do aluguel será de:", resultado, "reais")
+9. Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a quantidade de cigarros fumados por dia e quantos anos ele já fumou. Considere que um fumante perde 10 minutos de vida a cada cigarro, calcule quantos dias de vida um fumante perderá. Exiba o total de dias.
+
+print("Calculadora da morte")
+ 
+cigarros =float(input("Digite a quantidade de cigarros fumados por dia:"))
+ 
+anos = float(input("Digite a quantos anos o fumante fuma:"))
+ 
+resultado =(anos*365)*cigarros*10
+ 
+print("O total em minutos da redução de vida do fumante é:", resultado)
+
+10. Faça um Programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 6 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00 ou em galões de 3,6 litros, que custam R$25,00. Informe ao usuário as quantidades de tinta a serem compradas e os respectivos preços em 3 situações:
+
+a. comprar apenas latas de 18 litros;
+
+b. comprar apenas galões de 3,6 litros;
+
+c. misturar latas e galões, de forma que o preço seja o menor. Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.
